@@ -16,5 +16,13 @@
       "sizes": "512x512",
       "type": "image/png"
     }
+    "shortcuts": [
+  {
+    "name": "Crear viaje",
+    "url": "/viaje-pwa/crear-viaje.html",
+    "icons": [{ "src": "icon-192.png", "sizes": "192x192" }]
+  }
+]
+
   ]
 }
