@@ -1,0 +1,22 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  padding: 40px 20px;
+  background-color: #f4f6f9;
+  text-align: center;
+}
+.boton {
+  display: block;
+  margin: 20px auto;
+  padding: 16px 24px;
+  font-size: 18px;
+  border: none;
+  background-color: #2196f3;
+  color: white;
+  border-radius: 10px;
+  width: 80%;
+  max-width: 300px;
+  text-decoration: none;
+}
+.boton:hover {
+  background-color: #1976d2;
+}
