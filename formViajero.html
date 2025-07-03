@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cargar Viajante</title>
+</head>
+<body>
+  <h2>Cargar Viajante</h2>
+  <form id="viajeroForm">
+    <input type="text" name="nombre" placeholder="Nombre" required>
+    <input type="text" name="apellido" placeholder="Apellido" required>
+    <input type="number" name="edad" placeholder="Edad">
+    <input type="number" name="peso" placeholder="Peso">
+    <input type="number" name="altura" placeholder="Altura">
+    <input type="email" name="email" placeholder="Email">
+    <input type="text" name="telefono" placeholder="Teléfono">
+    <select name="categoria">
+      <option value="niña/o">Niña/o</option>
+      <option value="joven">Joven</option>
+      <option value="adulto">Adulto</option>
+    </select>
+    <input type="text" name="grupo" placeholder="Grupo (opcional)">
+    <input type="date" name="fecha_inicio">
+    <input type="date" name="fecha_fin">
+    <button type="submit">Guardar</button>
+  </form>
+
+  <script>
+    const form = document.getElementById('viajeroForm');
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const data = Object.fromEntries(new FormData(form));
+
+      await fetch("https://script.google.com/macros/s/TU_URL_DE_SCRIPT/exec", {
+        method: "POST",
+        body: JSON.stringify(data),
+        headers: {
+          "Content-Type": "application/json"
+        }
+      });
+
+      alert("Viajero guardado!");
+      form.reset();
+    });
+  </script>
+</body>
+</html>
