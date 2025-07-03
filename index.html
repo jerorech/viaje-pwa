@@ -1,10 +1,22 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Gestión de Viaje</title>
-  </head>
-  <body>
-    <h1>Esta es una carpeta pública para archivos de PWA</h1>
-    <p>Servimos el manifest.json y serviceWorker.js desde aquí.</p>
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <title>Gestión del Viaje</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Gestión del Viaje</h1>
+  <a href="formViajero.html" class="boton">➕ Cargar viajante</a>
+  <a href="formMenu.html" class="boton">🍽️ Crear menú</a>
+  <a href="formPreferencias.html" class="boton">📆 Cargar menú por viajante</a>
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('serviceWorker.js');
+    }
+  </script>
+</body>
 </html>
