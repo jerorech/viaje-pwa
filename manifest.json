@@ -1,7 +1,7 @@
 {
   "name": "Gestión de Viaje",
   "short_name": "Viaje",
-  "start_url": "https://script.google.com/macros/s/AKfycbzAZu96BZs6T84u-I2M5XV4NOCcYt7PQ60eekNCI5cwyX53BkVo_hPbAv4lRBLSqHZOhw/exec",
+  "start_url": "https://jerorech.github.io/viaje-pwa/index.html",
   "display": "standalone",
   "background_color": "#ffffff",
   "theme_color": "#2196f3",
